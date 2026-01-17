@@ -2,14 +2,14 @@
 
 ## Overview
 
-LapShop is an academic ASP.NET MVC e-commerce application focused on managing laptop products, categories, sales invoices, and customer orders. The system emphasizes relational data modeling, MVC architecture, and structured navigation between related entities using the Code First approach.
+LapShop is an academic ASP.NET MVC e-commerce application focused on managing laptop products, categories, sales invoices, and customer orders. The system emphasizes relational data modeling, MVC architecture, and structured navigation between related entities using the Database First approach.
 
 ---
 
 ## Objectives
 
 * Apply ASP.NET MVC architectural principles
-* Model relational data using Code First and Fluent API
+* Model relational data using Database First and Fluent API
 * Implement full CRUD operations for products and categories
 * Manage sales invoices and customer orders
 * Establish clear navigation between products, categories, and invoices
@@ -21,7 +21,7 @@ LapShop is an academic ASP.NET MVC e-commerce application focused on managing la
 
 * **Language:** C#
 * **Framework:** ASP.NET Core MVC
-* **ORM:** Entity Framework Core (Code First)
+* **ORM:** Entity Framework Core (Database First)
 * **Database:** SQL Server
 * **Authentication:** ASP.NET Core Identity
 * **Frontend:** Razor Views, HTML, CSS
@@ -146,7 +146,7 @@ LapShop/
 ## Learning Outcomes
 
 * Practical understanding of MVC architecture
-* Experience with Code First and Fluent API
+* Experience with Database First and Fluent API
 * Managing relational data in real-world applications
 * Designing structured navigation between connected entities
 * Improving data integrity and validation
@@ -160,7 +160,7 @@ LapShop/
 ### Prerequisites
 
 * Visual Studio 2022 or later
-* .NET 6.0 SDK or later
+* .NET 8.0 SDK or later
 * SQL Server (LocalDB or full instance)
 
 ### Installation
@@ -172,14 +172,9 @@ LapShop/
 
 2. Open `LapShop.sln` in Visual Studio
 
-3. Update the connection string in `appsettings.json` if needed
+3. Update the connection string in `appsettings.json` to point to your existing database
 
-4. Run Entity Framework migrations
-   ```bash
-   dotnet ef database update
-   ```
-
-5. Run the application
+4. Run the application
    ```bash
    dotnet run
    ```
